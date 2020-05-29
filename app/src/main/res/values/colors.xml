@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0E3020</color>
+    <!-- This is for status bar -->
+    <color name="primaryColorDark">#CCDBD4</color>
+</resources>
