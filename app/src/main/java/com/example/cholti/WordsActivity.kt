@@ -2,6 +2,8 @@ package com.example.cholti
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +17,10 @@ class WordsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.words_list)
+        val categoryText: TextView = binding.categoryTextView
+        categoryText.text = "WORDS"
+        val categoryImage: ImageView = binding.categoryImageView
+        categoryImage.setImageResource(R.drawable.shobdo)
         val words: MutableList<Word> = mutableListOf(
             Word(defaultWord = "Yes", bengaliWord = "হ্যাঁ", pronunciation = "HAAN", mediaResourceId = R.raw.words_yes),
             Word(defaultWord = "No", bengaliWord = "না", pronunciation = "NAA", mediaResourceId = R.raw.words_no),
