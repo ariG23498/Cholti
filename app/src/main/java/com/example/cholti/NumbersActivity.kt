@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.bangla.CustomSnapHelper
 import com.example.bangla.Word
 import com.example.bangla.WordAdapter
@@ -19,8 +20,10 @@ class NumbersActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this,R.layout.words_list)
         val categoryText: TextView = binding.categoryTextView
         categoryText.text = "NUMBERS"
-        val categoryImage: ImageView = binding.categoryImageView
-        categoryImage.setImageResource(R.drawable.nombor)
+        Glide
+            .with(this)
+            .load(R.drawable.nombor)
+            .into(binding.categoryImageView)
         val words: MutableList<Word> = mutableListOf(
             Word(defaultWord = "One", bengaliWord = "এক", pronunciation = "EK", mediaResourceId = R.raw.numbers_one),
             Word(defaultWord = "Two", bengaliWord = "দুই", pronunciation = "DUI", mediaResourceId = R.raw.numbers_two),

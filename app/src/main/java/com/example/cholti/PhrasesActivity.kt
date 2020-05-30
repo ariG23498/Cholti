@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.bangla.CustomSnapHelper
 import com.example.bangla.Word
 import com.example.bangla.WordAdapter
@@ -19,8 +20,10 @@ class PhrasesActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this,R.layout.words_list)
         val categoryText: TextView = binding.categoryTextView
         categoryText.text = "PHRASES"
-        val categoryImage: ImageView = binding.categoryImageView
-        categoryImage.setImageResource(R.drawable.kotha)
+        Glide
+            .with(this)
+            .load(R.drawable.kotha)
+            .into(binding.categoryImageView)
         val words: MutableList<Word> = mutableListOf(
             Word(defaultWord = "Thank you", bengaliWord = "ধন্যবাদ", pronunciation = "DHO-NNO-BAAD", mediaResourceId = R.raw.phrases_thankyou),
             Word(defaultWord = "How are you", bengaliWord = "আপনি কেমন আছেন", pronunciation = "AAPNI-KEMON-ACHEN", mediaResourceId = R.raw.phrases_howareyou),

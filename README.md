@@ -17,3 +17,24 @@ The voice that you get to hear is from my friend [Puja](https://twitter.com/pleb
 3. Recycler-view.
 4. Material Library.
 5. Data-Binding.
+
+### Details
+#### Recycler-View
+In the application there are five elements in each category. The elements had to be encapsulated
+in cards. Each card is used from the `material library`. These cards were inflated in a view holder
+and were shown with the help  of an adapter that fetched dynamic data and the recycler view. We wanted
+have a pager like behaviour, hence had to make a custom class which emulates the clip behaviour. While
+scrolling you will have the card centre itself.
+The creators class has another recycler view set up which is `VERTICAL`. The viewholder had to changed
+and the `jpg` images are loaded with a 3rd party library named `Glide`.
+#### Data-Binding
+With the problem of `findViewById` the application had to go through the entire view hierarchy each time
+the activity is created. With the `data binding` scheme, there was generated classes out of which we could
+build the view object and cache them. The accessing of view reduced the overhead and the app performance
+increased drastically.
+#### Intents
+With the project I understood what an `implicit` and `explicit` intent means. In the `creators` page
+each creator has the `twitter`, `linkedin` and `github` profiles linked. With implicit intents I had to
+launch the `url` and open it in the application that can help with the Intent.
+The main page leads to different in-app `activities`, which is achieved by `explicit intents`. In kotlin
+the reference operator had to be used for explicit activity intents.

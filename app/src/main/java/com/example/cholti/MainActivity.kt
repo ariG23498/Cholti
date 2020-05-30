@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.bumptech.glide.Glide
 import com.example.cholti.databinding.ActivityMainBinding
 import com.google.android.material.card.MaterialCardView
 
@@ -22,6 +23,24 @@ class MainActivity : AppCompatActivity() {
         val numbersCard: MaterialCardView = binding.numbersCard
         val colorsCard: MaterialCardView = binding.colorsCard
         val logo: ImageView = binding.logoImageView
+
+        Glide
+            .with(this)
+            .load(R.drawable.kotha)
+            .into(findViewById(R.id.phrasesImageView))
+        Glide
+            .with(this)
+            .load(R.drawable.nombor)
+            .into(findViewById(R.id.numbersImageView))
+        Glide
+            .with(this)
+            .load(R.drawable.shobdo)
+            .into(findViewById(R.id.wordsImageView))
+        Glide
+            .with(this)
+            .load(R.drawable.rong)
+            .into(findViewById(R.id.colorsImageView))
+
         wordsCard.setOnClickListener {
             wordsCard.isChecked = !wordsCard.isChecked
             phrasesCard.isChecked = false

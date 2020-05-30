@@ -34,7 +34,6 @@ class CreatorAdapter(private val dataSet: List<Creator>, private val mcontext: C
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         viewHolder.profileName.text = dataSet[position].profileName
         viewHolder.profileBio.text = dataSet[position].profileBio
-//        viewHolder.profilePicture.setImageResource(dataSet[position].profilePicture)
         Glide.with(mcontext).load(dataSet[position].profilePicture).into(viewHolder.profilePicture)
 
         viewHolder.githubId.setOnClickListener {

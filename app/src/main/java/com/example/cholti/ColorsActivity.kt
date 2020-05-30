@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.bangla.CustomSnapHelper
 import com.example.bangla.Word
 import com.example.bangla.WordAdapter
@@ -19,8 +20,10 @@ class ColorsActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this,R.layout.words_list)
         val categoryText: TextView = binding.categoryTextView
         categoryText.text = "COLORS"
-        val categoryImage: ImageView = binding.categoryImageView
-        categoryImage.setImageResource(R.drawable.rong)
+        Glide
+            .with(this)
+            .load(R.drawable.rong)
+            .into(binding.categoryImageView)
         val words: MutableList<Word> = mutableListOf(
             Word(defaultWord = "Red", bengaliWord = "লাল", pronunciation = "LAAL", mediaResourceId = R.raw.colours_red),
             Word(defaultWord = "Green", bengaliWord = "সবুজ", pronunciation = "SHO-BUJ", mediaResourceId = R.raw.colours_green),
