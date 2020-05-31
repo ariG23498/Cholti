@@ -1,4 +1,4 @@
-package com.example.bangla
+package com.example.cholti.data
 
 data class Word(
     var defaultWord: String,

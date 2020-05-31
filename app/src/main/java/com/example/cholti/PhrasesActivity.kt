@@ -2,14 +2,13 @@ package com.example.cholti
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.bangla.CustomSnapHelper
-import com.example.bangla.Word
+import com.example.cholti.data.Word
 import com.example.bangla.WordAdapter
 import com.example.cholti.databinding.WordsListBinding
 

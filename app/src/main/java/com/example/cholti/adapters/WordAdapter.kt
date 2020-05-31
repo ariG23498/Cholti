@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cholti.R
+import com.example.cholti.data.Word
 
 
 class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {

@@ -1,4 +1,4 @@
-package com.example.cholti
+package com.example.cholti.data
 
 data class Creator(
     var profileName: String,
