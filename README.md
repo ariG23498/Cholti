@@ -3,15 +3,18 @@
 the understanding of Kotlin and apply it in real projects using Google
 resources (`codelabs`, sessions with `Googlers`) between 7th May - 7th of June.
 
-<img src="https://raw.githubusercontent.com/ariG23498/Cholti/master/app/src/main/res/drawable/logo.png" height=150 width=150>
-
 ## Cholti | চলতি
+The name of the app, "Cholti" (often followed by "bhasha" or language) refers to the colloquial tongue used in Bengali language in a regular and informal sense.
 The idea of the application is to provide Bengali (বাংলা) pronunciation of
 some essentials. The chosen categories are `Words`, `Phrases`, `Colors` and `Numbers`.
 Each category has 5 distinct elements that have their english and bengali script
 along with the proper bengali pronunciation. The `illustrations` in app are original
 artworks by two of my friends [Ritwik](https://twitter.com/RahaRitwik) and [Rajwrita](https://twitter.com/rajwrita).
 The voice that you get to hear is of my friend [Puja](https://twitter.com/pleb_talks).
+
+<img src="https://raw.githubusercontent.com/ariG23498/Cholti/master/app/src/main/res/drawable/logo.png" height=100 width=100>
+
+>Idea behind the logo: For almost all of us this is the first image that is visually associated with learning bengali, it is page 1 of `sohoj path`, and therefore it only makes sense that any newcomer to the language should be given the same treatment. <br> ~ Ritwik Raha.
 
 <img src="https://raw.githubusercontent.com/ariG23498/Cholti/master/readme-assets/shobdo.gif">
 
